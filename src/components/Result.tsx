@@ -48,49 +48,50 @@ export default function Result({ scores, onRestart }: ResultProps) {
       'DVP': { 
         name: '纯情小女仆', 
         imageUrl: '/images/女仆2.png', // 替换为你上传的图片名
-        taobaoUrl: 'https://s.taobao.com/search?q=%E7%BA%AF%E6%83%85%E5%B0%8F%E5%A5%B3%E4%BB%86+%E4%BA%8C%E6%AC%A1%E5%85%83+%E6%8A%B1%E6%9E%95',
+        taobaoUrl: 'https://e.tb.cn/h.iNG7eORVmidhMDL?tk=2fwU5fnZ45p',
+        // taobaoUrl: 'https://s.tb.cn/c.0DBlPp',
         desc: '乖巧听话，满眼都是你' 
       },
       'DVN': { 
         name: '温情猫娘', 
         imageUrl: '/images/猫娘.png', // 替换为你上传的图片名
-        taobaoUrl: 'https://s.taobao.com/search?q=%E7%97%85%E5%A8%87%E5%B0%8F%E6%81%B6%E9%AD%94+%E4%BA%8C%E6%AC%A1%E5%85%83+%E6%8A%B1%E6%9E%95',
+        taobaoUrl: 'https://e.tb.cn/h.iMnp7p24mgGueYK?tk=QtSb5fNxZ13',
         desc: '有点坏坏的，但完全被你掌控' 
       },
       'DEP': { 
         name: '温柔青梅竹马', 
         imageUrl: '/images/千金.png', // 替换为你上传的图片名
-        taobaoUrl: 'https://s.taobao.com/search?q=%E6%B8%A9%E6%9F%94%E9%9D%92%E6%A2%85%E7%AB%B9%E9%A9%AC+%E4%BA%8C%E6%AC%A1%E5%85%83+%E6%8A%B1%E6%9E%95',
+        taobaoUrl: 'https://e.tb.cn/h.injx1z5fRzBsZhc?tk=T5NS5fNBuLP',
         desc: '懂你的奇奇怪怪，永远支持你' 
       },
       'DEN': { 
         name: '堕落修女', 
         imageUrl: '/images/修女.png', // 替换为你上传的图片名
-        taobaoUrl: 'https://s.taobao.com/search?q=%E5%A0%95%E8%90%BD%E5%9C%A3%E5%A5%B3+%E4%BA%8C%E6%AC%A1%E5%85%83+%E6%8A%B1%E6%9E%95',
+        taobaoUrl: 'https://e.tb.cn/h.iMnLGfRn8Brmp2L?tk=Uk7B5fNDgYW',
         desc: '灵魂深处的纠葛与臣服' 
       },
       'SVP': { 
         name: '高冷御姐', 
         imageUrl: '/images/古桥.png', // 替换为你上传的图片名
-        taobaoUrl: 'https://s.taobao.com/search?q=%E9%AB%98%E5%86%B7%E5%BE%A1%E5%A7%90+%E4%BA%8C%E6%AC%A1%E5%85%83+%E6%8A%B1%E6%9E%95',
+        taobaoUrl: 'https://e.tb.cn/h.iNG6WRz3ojMoBin?tk=YpxZ5fNyo8A',
         desc: '外表高冷，只把你当成专属宠物' 
       },
       'SVN': { 
         name: '抖S女王', 
         imageUrl: '/images/旋风.png', // 替换为你上传的图片名
-        taobaoUrl: 'https://s.taobao.com/search?q=%E6%8A%96S%E5%A5%B3%E7%8E%8B+%E4%BA%8C%E6%AC%A1%E5%85%83+%E6%8A%B1%E6%9E%95',
+        taobaoUrl: 'https://e.tb.cn/h.iNVaPLA46daf253?tk=kSiP5fNEy7O',
         desc: '绝对的支配者，让你欲罢不能' 
       },
       'SEP': { 
         name: '知性大姐姐', 
         imageUrl: '/images/近邻.png', // 替换为你上传的图片名
-        taobaoUrl: 'https://s.taobao.com/search?q=%E7%9F%A5%E6%80%A7%E5%A4%A7%E5%A7%90%E5%A7%90+%E4%BA%8C%E6%AC%A1%E5%85%83+%E6%8A%B1%E6%9E%95',
+        taobaoUrl: 'https://e.tb.cn/h.iMnntDRS0kC9ezS?tk=tdCI5fNESyK',
         desc: '在精神上完全包容并引导你' 
       },
       'SEN': { 
         name: '腹黑地雷女', 
         imageUrl: '/images/地雷.png', // 替换为你上传的图片名
-        taobaoUrl: 'https://s.taobao.com/search?q=%E8%85%B9%E9%BB%91%E9%AD%94%E5%A5%B3+%E4%BA%8C%E6%AC%A1%E5%85%83+%E6%8A%B1%E6%9E%95',
+        taobaoUrl: 'https://e.tb.cn/h.iNeGCiOHF4k4aFs?tk=SCtH5fNruKj',
         desc: '将你玩弄于股掌之间的危险迷人精' 
       },
     };

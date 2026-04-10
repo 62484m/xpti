@@ -1,0 +1,5 @@
+{
+  "name": "XPTI 人格测试",
+  "description": "一个类似MBTI的XP测试网站，通过20道题目测试你的XP倾向。",
+  "requestFramePermissions": []
+}

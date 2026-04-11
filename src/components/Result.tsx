@@ -100,23 +100,12 @@ export default function Result({ scores, onRestart }: ResultProps) {
   }, [scores]);
 
   const handleShare = async () => {
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: 'XPTI 人格测试',
-          text: `我的XPTI测试结果是：${resultType.code} - ${resultType.name}！快来测测你的XP吧！`,
-          url: window.location.href,
-        });
-      } catch (err) {
-        console.log('Share failed', err);
-      }
-    } else {
-      try {
-        await navigator.clipboard.writeText(window.location.href);
-        alert('链接已复制到剪贴板，快去粘贴分享给朋友吧！');
-      } catch (err) {
-        alert('复制失败，请手动复制浏览器地址栏的链接哦~');
-      }
+    const shareText = '【XP测试】转发给你的绅士朋友也试试吧 https://xpti.pages.dev/';
+    try {
+      await navigator.clipboard.writeText(shareText);
+      alert('已复制网址，转发给朋友测试一下');
+    } catch (err) {
+      alert('复制失败，请手动复制网址：https://xpti.pages.dev/');
     }
   };
 

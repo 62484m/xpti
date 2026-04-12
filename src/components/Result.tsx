@@ -71,13 +71,13 @@ export default function Result({ scores, onRestart }: ResultProps) {
         desc: '灵魂深处的纠葛与臣服' 
       },
       'SVP': { 
-        name: '高冷御姐', 
+        name: '高冷御姐：古桥斩月', 
         imageUrl: '/images/古桥.png', // 替换为你上传的图片名
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '外表高冷，只把你当成专属宠物' 
       },
       'SVN': { 
-        name: '抖S女王', 
+        name: '抖S女王：翠青旋风', 
         imageUrl: '/images/旋风.png', // 替换为你上传的图片名
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '绝对的支配者，让你欲罢不能' 

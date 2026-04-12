@@ -49,49 +49,49 @@ export default function Result({ scores, onRestart }: ResultProps) {
         name: '纯情小女仆', 
         imageUrl: '/images/女仆2.png', // 替换为你上传的图片名
         // taobaoUrl: 'https://e.tb.cn/h.iNG7eORVmidhMDL?tk=2fwU5fnZ45p',
-        taobaoUrl: 'https://s.tb.cn/c.0DBclX',
+        taobaoUrl: 'https://s.tb.cn/c.0x3qpU',
         desc: '乖巧听话，满眼都是你' 
       },
       'DVN': { 
         name: '温情猫娘', 
         imageUrl: '/images/猫娘.png', // 替换为你上传的图片名
-        taobaoUrl: 'https://s.tb.cn/c.0DBclX',
+        taobaoUrl: 'https://s.tb.cn/c.0x3qpU',
         desc: '有点坏坏的，但完全被你掌控' 
       },
       'DEP': { 
         name: '温柔青梅竹马', 
         imageUrl: '/images/千金.png', // 替换为你上传的图片名
-        taobaoUrl: 'https://s.tb.cn/c.0DBclX',
+        taobaoUrl: 'https://s.tb.cn/c.0x3qpU',
         desc: '懂你的奇奇怪怪，永远支持你' 
       },
       'DEN': { 
         name: '堕落修女', 
         imageUrl: '/images/修女.png', // 替换为你上传的图片名
-        taobaoUrl: 'https://s.tb.cn/c.0DBclX',
+        taobaoUrl: 'https://s.tb.cn/c.0x3qpU',
         desc: '灵魂深处的纠葛与臣服' 
       },
       'SVP': { 
         name: '高冷御姐', 
         imageUrl: '/images/古桥.png', // 替换为你上传的图片名
-        taobaoUrl: 'https://s.tb.cn/c.0DBclX',
+        taobaoUrl: 'https://s.tb.cn/c.0x3qpU',
         desc: '外表高冷，只把你当成专属宠物' 
       },
       'SVN': { 
         name: '抖S女王', 
         imageUrl: '/images/旋风.png', // 替换为你上传的图片名
-        taobaoUrl: 'https://s.tb.cn/c.0DBclX',
+        taobaoUrl: 'https://s.tb.cn/c.0x3qpU',
         desc: '绝对的支配者，让你欲罢不能' 
       },
       'SEP': { 
         name: '知性大姐姐', 
         imageUrl: '/images/近邻.png', // 替换为你上传的图片名
-        taobaoUrl: 'https://s.tb.cn/c.0DBclX',
+        taobaoUrl: 'https://s.tb.cn/c.0x3qpU',
         desc: '在精神上完全包容并引导你' 
       },
       'SEN': { 
         name: '腹黑地雷女', 
         imageUrl: '/images/地雷.png', // 替换为你上传的图片名
-        taobaoUrl: 'https://s.tb.cn/c.0DBclX',
+        taobaoUrl: 'https://s.tb.cn/c.0x3qpU',
         desc: '将你玩弄于股掌之间的危险迷人精' 
       },
     };

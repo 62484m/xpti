@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { RotateCcw, Share2, ShoppingCart } from 'lucide-react';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from 'recharts';
@@ -10,9 +10,33 @@ interface ResultProps {
   onRestart: () => void;
 }
 
-export default function Result({ scores, onRestart }: ResultProps) {
-  const [imageLoaded, setImageLoaded] = useState(false);
+// Add this component above the Result component
+const WaifuImage: React.FC<{ url: string, name: string, desc: string }> = ({ url, name, desc }) => {
+  const [loaded, setLoaded] = useState(false);
+  return (
+    <div className="aspect-[3/4] w-[85%] sm:w-full flex-none snap-center rounded-lg overflow-hidden bg-gray-200 relative shadow-sm">
+      {!loaded && (
+        <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
+          <div className="w-8 h-8 border-4 border-pink-300 border-t-pink-500 rounded-full animate-spin"></div>
+        </div>
+      )}
+      <img 
+        src={url}
+        alt={name}
+        loading="lazy"
+        onLoad={() => setLoaded(true)}
+        className={`w-full h-full object-cover transition-opacity duration-500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+        referrerPolicy="no-referrer"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent flex flex-col justify-end p-4">
+        <h4 className="text-white font-bold text-xl mb-0.5">{name}</h4>
+        <p className="text-white/90 text-xs leading-tight">{desc}</p>
+      </div>
+    </div>
+  );
+}
 
+export default function Result({ scores, onRestart }: ResultProps) {
   const resultType = useMemo(() => {
     const d1 = scores.D >= scores.S ? 'D' : 'S';
     const d2 = scores.V >= scores.E ? 'V' : 'E';
@@ -44,53 +68,76 @@ export default function Result({ scores, onRestart }: ResultProps) {
     const key = `${isD ? 'D' : 'S'}${isV ? 'V' : 'E'}${isP ? 'P' : 'N'}`;
     
     // 在这里修改你的立绘图片和淘宝链接！
-    const waifus: Record<string, { name: string, imageUrl: string, taobaoUrl: string, desc: string }> = {
+    const waifus: Record<string, { name: string, imageUrls: string[], taobaoUrl: string, desc: string }> = {
       'DVP': { 
         name: '纯情小女仆', 
-        imageUrl: '/images/女仆2.png', // 替换为你上传的图片名
-        // taobaoUrl: 'https://e.tb.cn/h.iNG7eORVmidhMDL?tk=2fwU5fnZ45p',
+        imageUrls: [
+          '/images/女仆2.png', 
+          '/images/女仆.png' // 备用图片，可替换
+        ],
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '乖巧听话，满眼都是你' 
       },
       'DVN': { 
         name: '温情猫娘', 
-        imageUrl: '/images/猫娘.png', // 替换为你上传的图片名
+        imageUrls: [
+          '/images/猫娘.png',
+          '/images/猫娘1.png'
+        ],
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '有点坏坏的，但完全被你掌控' 
       },
       'DEP': { 
         name: '温柔青梅竹马', 
-        imageUrl: '/images/千金.png', // 替换为你上传的图片名
+        imageUrls: [
+          '/images/千金.png',
+          '/images/千金1.png'
+        ],
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '懂你的奇奇怪怪，永远支持你' 
       },
       'DEN': { 
         name: '堕落修女的侍奉', 
-        imageUrl: '/images/修女.png', // 替换为你上传的图片名
+        imageUrls: [
+          '/images/修女.png',
+          '/images/修女1.png'
+        ],
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '灵魂深处的纠葛与臣服' 
       },
       'SVP': { 
         name: '高冷御姐', 
-        imageUrl: '/images/古桥.png', // 替换为你上传的图片名
+        imageUrls: [
+          '/images/古桥.png',
+          '/images/古桥2.png'
+        ],
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '外表高冷，只把你当成专属宠物' 
       },
       'SVN': { 
         name: '抖S女王', 
-        imageUrl: '/images/旋风.png', // 替换为你上传的图片名
+        imageUrls: [
+          '/images/旋风.png',
+          '/images/旋风2.png'
+        ],
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '绝对的支配者，让你欲罢不能' 
       },
       'SEP': { 
         name: '知性大姐姐', 
-        imageUrl: '/images/近邻.png', // 替换为你上传的图片名
+        imageUrls: [
+          '/images/近邻.png',
+          '/images/近邻1.png'
+        ],
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '在精神上完全包容并引导你' 
       },
       'SEN': { 
-        name: '腹黑地雷系彼女', 
-        imageUrl: '/images/地雷.png', // 替换为你上传的图片名
+        name: '腹黑地雷女', 
+        imageUrls: [
+          '/images/地雷.png',
+          '/images/地雷1.png'
+        ],
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '将你玩弄于股掌之间的危险迷人精' 
       },
@@ -148,28 +195,19 @@ export default function Result({ scores, onRestart }: ResultProps) {
           
           {/* Waifu Card - Moved to top, compact */}
           <div className="w-full bg-gray-50 rounded-xl p-3 border border-gray-200 shadow-sm relative overflow-hidden group">
-            <div className="absolute top-4 left-4 bg-pink-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10 shadow-sm">
+            <div className="absolute top-4 left-4 bg-pink-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-20 shadow-sm">
               100% 契合
             </div>
-            <div className="aspect-[3/4] w-full rounded-lg overflow-hidden bg-gray-200 relative">
-              {/* Loading Spinner */}
-              {!imageLoaded && (
-                <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
-                  <div className="w-8 h-8 border-4 border-pink-300 border-t-pink-500 rounded-full animate-spin"></div>
-                </div>
-              )}
-              <img 
-                src={waifu.imageUrl}
-                alt={waifu.name}
-                loading="lazy"
-                onLoad={() => setImageLoaded(true)}
-                className={`w-full h-full object-cover transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent flex flex-col justify-end p-4">
-                <h4 className="text-white font-bold text-xl mb-0.5">{waifu.name}</h4>
-                <p className="text-white/90 text-xs leading-tight">{waifu.desc}</p>
-              </div>
+            
+            {/* Horizontal Scroll Container */}
+            <div className="flex overflow-x-auto snap-x snap-mandatory gap-3 pb-2 -mx-1 px-1" style={{ scrollbarWidth: 'none' }}>
+              {waifu.imageUrls.map((url, idx) => (
+                <WaifuImage key={idx} url={url} name={waifu.name} desc={waifu.desc} />
+              ))}
+            </div>
+            
+            <div className="text-center text-xs text-gray-400 mt-1 mb-2">
+              左右滑动查看更多形态 👉
             </div>
             
             <a 

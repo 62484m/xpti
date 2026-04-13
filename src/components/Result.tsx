@@ -115,7 +115,7 @@ export default function Result({ scores, onRestart }: ResultProps) {
           '/images/古桥.webp',
           '/images/古桥2.webp'
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0DB3BG',
+        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '外表高冷，只把你当成专属宠物',
         quote: '“就这点出息？（挑眉）既然你这么想要，下面那个东西...自己拿去用吧。”'
       },

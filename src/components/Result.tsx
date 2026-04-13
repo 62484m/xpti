@@ -72,8 +72,9 @@ export default function Result({ scores, onRestart }: ResultProps) {
       'DVP': { 
         name: '纯情小女仆', 
         imageUrls: [
-          '/images/女仆2.webp', 
-          '/images/女仆.webp' // 备用图片，可替换
+          '/images/女仆2.webp', // 备用图片，可替换
+          '/images/女仆.webp' ,
+          '/images/女仆1.webp' 
         ],
         taobaoUrl: 'https://s.tb.cn/c.0xmLqL',
         desc: '乖巧听话，满眼都是你',
@@ -93,9 +94,11 @@ export default function Result({ scores, onRestart }: ResultProps) {
         name: '温柔青梅竹马', 
         imageUrls: [
           '/images/千金.webp',
-          '/images/千金1.webp'
+          '/images/千金1.webp',
+          '/images/千金2.webp',
+          '/images/千金3.webp'
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0x3j2K',
+        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '懂你的奇奇怪怪，永远支持你',
         quote: '“真是的，从小到大你的XP还是这么好懂...（叹气）喏，你要的东西我帮你找好了，在下面。”'
       },
@@ -115,7 +118,7 @@ export default function Result({ scores, onRestart }: ResultProps) {
           '/images/古桥.webp',
           '/images/古桥2.webp'
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
+        taobaoUrl: 'https://s.tb.cn/c.0DB3BG',
         desc: '外表高冷，只把你当成专属宠物',
         quote: '“就这点出息？（挑眉）既然你这么想要，下面那个东西...自己拿去用吧。”'
       },
@@ -143,7 +146,8 @@ export default function Result({ scores, onRestart }: ResultProps) {
         name: '腹黑地雷女', 
         imageUrls: [
           '/images/地雷.webp',
-          '/images/地雷1.webp'
+          '/images/地雷1.webp',
+          '/images/地雷2.webp'
         ],
         taobaoUrl: 'https://s.tb.cn/c.0x3UHx',
         desc: '将你玩弄于股掌之间的危险迷人精',

@@ -68,15 +68,16 @@ export default function Result({ scores, onRestart }: ResultProps) {
     const key = `${isD ? 'D' : 'S'}${isV ? 'V' : 'E'}${isP ? 'P' : 'N'}`;
     
     // 在这里修改你的立绘图片和淘宝链接！
-    const waifus: Record<string, { name: string, imageUrls: string[], taobaoUrl: string, desc: string }> = {
+    const waifus: Record<string, { name: string, imageUrls: string[], taobaoUrl: string, desc: string, quote: string }> = {
       'DVP': { 
         name: '纯情小女仆', 
         imageUrls: [
           '/images/女仆2.webp', 
           '/images/女仆.webp' // 备用图片，可替换
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
-        desc: '乖巧听话，满眼都是你' 
+        taobaoUrl: 'https://s.tb.cn/c.0xmLqL',
+        desc: '乖巧听话，满眼都是你',
+        quote: '“主人，欢迎回来...（提裙摆）您是先吃饭，先洗澡，还是...先拆开下面的包裹呢？”'
       },
       'DVN': { 
         name: '温情猫娘', 
@@ -84,8 +85,9 @@ export default function Result({ scores, onRestart }: ResultProps) {
           '/images/猫娘.webp',
           '/images/猫娘1.webp'
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
-        desc: '有点坏坏的，但完全被你掌控' 
+        taobaoUrl: 'https://s.tb.cn/c.0xm2Oq',
+        desc: '有点坏坏的，但完全被你掌控',
+        quote: '“喵呜~ 主人今天也辛苦啦！（蹭蹭）作为奖励，下面有猫猫为你准备的特别礼物哦~”'
       },
       'DEP': { 
         name: '温柔青梅竹马', 
@@ -93,8 +95,9 @@ export default function Result({ scores, onRestart }: ResultProps) {
           '/images/千金.webp',
           '/images/千金1.webp'
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
-        desc: '懂你的奇奇怪怪，永远支持你' 
+        taobaoUrl: 'https://s.tb.cn/c.0x3j2K',
+        desc: '懂你的奇奇怪怪，永远支持你',
+        quote: '“真是的，从小到大你的XP还是这么好懂...（叹气）喏，你要的东西我帮你找好了，在下面。”'
       },
       'DEN': { 
         name: '堕落修女的侍奉', 
@@ -102,8 +105,9 @@ export default function Result({ scores, onRestart }: ResultProps) {
           '/images/修女.webp',
           '/images/修女1.webp'
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
-        desc: '灵魂深处的纠葛与臣服' 
+        taobaoUrl: 'https://s.tb.cn/c.0x3y5M',
+        desc: '灵魂深处的纠葛与臣服',
+        quote: '“迷途的羔羊啊，你的欲望已经满溢了...（轻笑）来吧，接受这专属的‘惩罚工具’吧。”'
       },
       'SVP': { 
         name: '高冷御姐', 
@@ -111,8 +115,9 @@ export default function Result({ scores, onRestart }: ResultProps) {
           '/images/古桥.webp',
           '/images/古桥2.webp'
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
-        desc: '外表高冷，只把你当成专属宠物' 
+        taobaoUrl: 'https://s.tb.cn/c.0DB3BG',
+        desc: '外表高冷，只把你当成专属宠物',
+        quote: '“就这点出息？（挑眉）既然你这么想要，下面那个东西...自己拿去用吧。”'
       },
       'SVN': { 
         name: '抖S女王', 
@@ -121,7 +126,8 @@ export default function Result({ scores, onRestart }: ResultProps) {
           '/images/旋风2.webp'
         ],
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
-        desc: '绝对的支配者，让你欲罢不能' 
+        desc: '绝对的支配者，让你欲罢不能',
+        quote: '“原来你喜欢这种刺激...（踩）刚好，我为你准备了专属的‘惩罚工具’，就在下面，还不快谢恩？”'
       },
       'SEP': { 
         name: '知性大姐姐', 
@@ -129,8 +135,9 @@ export default function Result({ scores, onRestart }: ResultProps) {
           '/images/近邻.webp',
           '/images/近邻1.webp'
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
-        desc: '在精神上完全包容并引导你' 
+        taobaoUrl: 'https://s.tb.cn/c.0xOmdL',
+        desc: '在精神上完全包容并引导你',
+        quote: '“哎呀，真是个不坦率的孩子呢...（摸头）姐姐懂你的，你需要的东西，已经放在下面了哦。”'
       },
       'SEN': { 
         name: '腹黑地雷女', 
@@ -138,8 +145,9 @@ export default function Result({ scores, onRestart }: ResultProps) {
           '/images/地雷.webp',
           '/images/地雷1.webp'
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
-        desc: '将你玩弄于股掌之间的危险迷人精' 
+        taobaoUrl: 'https://s.tb.cn/c.0x3UHx',
+        desc: '将你玩弄于股掌之间的危险迷人精',
+        quote: '“呐呐，你只能看着我一个人对吧？（病娇笑）如果你敢看别人，我就用下面的东西把你...”'
       },
     };
     
@@ -208,6 +216,14 @@ export default function Result({ scores, onRestart }: ResultProps) {
             
             <div className="text-center text-xs text-gray-400 mt-1 mb-2">
               左右滑动查看更多形态 👉
+            </div>
+            
+            {/* 专属台词 */}
+            <div className="mt-2 mb-3 px-3 py-2.5 bg-pink-50/80 rounded-lg border border-pink-100 relative">
+              <div className="absolute -top-2 left-2 text-pink-300 text-3xl leading-none font-serif">"</div>
+              <p className="text-sm text-gray-700 italic relative z-10 pl-4 pr-1 leading-relaxed">
+                {waifu.quote}
+              </p>
             </div>
             
             <a 

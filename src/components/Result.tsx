@@ -72,8 +72,8 @@ export default function Result({ scores, onRestart }: ResultProps) {
       'DVP': { 
         name: '纯情小女仆', 
         imageUrls: [
-          '/images/女仆2.png', 
-          '/images/女仆.png' // 备用图片，可替换
+          '/images/女仆2.webp', 
+          '/images/女仆.webp' // 备用图片，可替换
         ],
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '乖巧听话，满眼都是你' 
@@ -81,8 +81,8 @@ export default function Result({ scores, onRestart }: ResultProps) {
       'DVN': { 
         name: '温情猫娘', 
         imageUrls: [
-          '/images/猫娘.png',
-          '/images/猫娘1.png'
+          '/images/猫娘.webp',
+          '/images/猫娘1.webp'
         ],
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '有点坏坏的，但完全被你掌控' 
@@ -90,8 +90,8 @@ export default function Result({ scores, onRestart }: ResultProps) {
       'DEP': { 
         name: '温柔青梅竹马', 
         imageUrls: [
-          '/images/千金.png',
-          '/images/千金1.png'
+          '/images/千金.webp',
+          '/images/千金1.webp'
         ],
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '懂你的奇奇怪怪，永远支持你' 
@@ -99,8 +99,8 @@ export default function Result({ scores, onRestart }: ResultProps) {
       'DEN': { 
         name: '堕落修女的侍奉', 
         imageUrls: [
-          '/images/修女.png',
-          '/images/修女1.png'
+          '/images/修女.webp',
+          '/images/修女1.webp'
         ],
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '灵魂深处的纠葛与臣服' 
@@ -108,8 +108,8 @@ export default function Result({ scores, onRestart }: ResultProps) {
       'SVP': { 
         name: '高冷御姐', 
         imageUrls: [
-          '/images/古桥.png',
-          '/images/古桥2.png'
+          '/images/古桥.webp',
+          '/images/古桥2.webp'
         ],
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '外表高冷，只把你当成专属宠物' 
@@ -117,8 +117,8 @@ export default function Result({ scores, onRestart }: ResultProps) {
       'SVN': { 
         name: '抖S女王', 
         imageUrls: [
-          '/images/旋风.png',
-          '/images/旋风2.png'
+          '/images/旋风.webp',
+          '/images/旋风2.webp'
         ],
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '绝对的支配者，让你欲罢不能' 
@@ -126,8 +126,8 @@ export default function Result({ scores, onRestart }: ResultProps) {
       'SEP': { 
         name: '知性大姐姐', 
         imageUrls: [
-          '/images/近邻.png',
-          '/images/近邻1.png'
+          '/images/近邻.webp',
+          '/images/近邻1.webp'
         ],
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '在精神上完全包容并引导你' 
@@ -135,8 +135,8 @@ export default function Result({ scores, onRestart }: ResultProps) {
       'SEN': { 
         name: '腹黑地雷女', 
         imageUrls: [
-          '/images/地雷.png',
-          '/images/地雷1.png'
+          '/images/地雷.webp',
+          '/images/地雷1.webp'
         ],
         taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '将你玩弄于股掌之间的危险迷人精' 

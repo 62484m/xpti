@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import { RotateCcw, Share2, ShoppingCart } from 'lucide-react';
+import { RotateCcw, Share2, ShoppingCart, MessageCircle } from 'lucide-react';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from 'recharts';
 import { Dimension } from '../data/questions';
 import { resultTypes } from '../data/types';
@@ -154,6 +154,12 @@ export default function Result({ scores, onRestart }: ResultProps) {
     return waifus[key];
   }, [scores]);
 
+  const rarityStats = useMemo(() => {
+    const count = Math.floor(Math.random() * 8000) + 1000; // 1000 to 9000
+    const percent = (Math.random() * 3 + 1).toFixed(1); // 1.0% to 4.0%
+    return { count, percent };
+  }, []);
+
   const handleShare = async () => {
     const shareText = '【XP测试】转发给你的绅士朋友也试试吧 https://xpti.pages.dev/';
     try {
@@ -185,7 +191,7 @@ export default function Result({ scores, onRestart }: ResultProps) {
             </h1>
             <h3 className="text-xl font-bold mb-3">{resultType.name}</h3>
             
-            <div className="flex flex-wrap justify-center gap-1.5">
+            <div className="flex flex-wrap justify-center gap-1.5 mb-4">
               {resultType.traits.map((trait, idx) => (
                 <span 
                   key={idx} 
@@ -194,6 +200,13 @@ export default function Result({ scores, onRestart }: ResultProps) {
                   {trait}
                 </span>
               ))}
+            </div>
+
+            {/* Rarity Stats integrated into header */}
+            <div className="bg-black/15 backdrop-blur-sm rounded-lg p-2.5 text-center border border-white/20 shadow-inner mx-auto max-w-[90%]">
+              <p className="text-sm text-white/95 font-medium">
+                <span className="font-bold text-white text-base">{rarityStats.percent}%</span> 的人拥有和你一样的极品 XP。
+              </p>
             </div>
           </div>
         </div>
@@ -230,11 +243,27 @@ export default function Result({ scores, onRestart }: ResultProps) {
               href={waifu.taobaoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-3 w-full flex items-center justify-center px-4 py-2.5 bg-[#ff5000] text-white rounded-lg text-sm font-bold hover:bg-[#e04600] transition-colors shadow-sm"
+              className="mt-3 w-full flex items-center justify-center px-4 py-3 bg-[#ff5000] text-white rounded-xl text-base font-bold hover:bg-[#e04600] transition-colors shadow-sm"
             >
-              <ShoppingCart className="w-4 h-4 mr-1.5" />
+              <ShoppingCart className="w-5 h-5 mr-2" />
               前往淘宝带她回家
             </a>
+          </div>
+
+          {/* QQ Group Button */}
+          <div className="flex flex-col items-center gap-2">
+            <a 
+              href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=s83tAtCiwobVN-ztKPcZ06glNai0dtAd&authKey=7uUXrBQi%2FHtPp8ot419pUGqtoFs%2FGig16N9QHI1ROXGR84jzJ%2BQsX8EXkXyI6qYZ&noverify=0&group_code=644205497"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex items-center justify-center px-4 py-3 bg-[#12B7F5] text-white rounded-xl text-base font-bold hover:bg-[#0ea5e9] transition-colors shadow-sm"
+            >
+              <MessageCircle className="w-5 h-5 mr-2" />
+              加入XPTI交流群
+            </a>
+            <span className="text-xs text-gray-500 font-medium bg-gray-100 px-3 py-1 rounded-full">
+              进群领周边礼包🎁
+            </span>
           </div>
 
           {/* Description - Compact */}

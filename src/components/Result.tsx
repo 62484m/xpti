@@ -76,7 +76,7 @@ export default function Result({ scores, onRestart }: ResultProps) {
           '/images/女仆.webp' ,
           '/images/女仆1.webp' 
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0xmLqL',
+        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '乖巧听话，满眼都是你',
         quote: '“主人，欢迎回来...（提裙摆）您是先吃饭，先洗澡，还是...先拆开下面的包裹呢？”'
       },
@@ -86,7 +86,7 @@ export default function Result({ scores, onRestart }: ResultProps) {
           '/images/猫娘.webp',
           '/images/猫娘1.webp'
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0xm2Oq',
+        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '有点坏坏的，但完全被你掌控',
         quote: '“喵呜~ 主人今天也辛苦啦！（蹭蹭）作为奖励，下面有猫猫为你准备的特别礼物哦~”'
       },
@@ -108,7 +108,7 @@ export default function Result({ scores, onRestart }: ResultProps) {
           '/images/修女.webp',
           '/images/修女1.webp'
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0x3y5M',
+        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '灵魂深处的纠葛与臣服',
         quote: '“迷途的羔羊啊，你的欲望已经满溢了...（轻笑）来吧，接受这专属的‘惩罚工具’吧。”'
       },
@@ -118,7 +118,7 @@ export default function Result({ scores, onRestart }: ResultProps) {
           '/images/古桥.webp',
           '/images/古桥2.webp'
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0DB3BG',
+        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '外表高冷，只把你当成专属宠物',
         quote: '“就这点出息？（挑眉）既然你这么想要，下面那个东西...自己拿去用吧。”'
       },
@@ -128,7 +128,7 @@ export default function Result({ scores, onRestart }: ResultProps) {
           '/images/旋风.webp',
           '/images/旋风2.webp'
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0xOLh4',
+        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '绝对的支配者，让你欲罢不能',
         quote: '“原来你喜欢这种刺激...（踩）刚好，我为你准备了专属的‘惩罚工具’，就在下面，还不快谢恩？”'
       },
@@ -138,7 +138,7 @@ export default function Result({ scores, onRestart }: ResultProps) {
           '/images/近邻.webp',
           '/images/近邻1.webp'
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0xOmdL',
+        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '在精神上完全包容并引导你',
         quote: '“哎呀，真是个不坦率的孩子呢...（摸头）姐姐懂你的，你需要的东西，已经放在下面了哦。”'
       },
@@ -149,7 +149,7 @@ export default function Result({ scores, onRestart }: ResultProps) {
           '/images/地雷1.webp',
           '/images/地雷2.webp'
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0x3UHx',
+        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
         desc: '将你玩弄于股掌之间的危险迷人精',
         quote: '“呐呐，你只能看着我一个人对吧？（病娇笑）如果你敢看别人，我就用下面的东西把你...”'
       },

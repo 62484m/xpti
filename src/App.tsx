@@ -20,7 +20,9 @@ const PRELOAD_IMAGES = [
   '/images/古桥.webp', '/images/古桥2.webp',
   '/images/旋风.webp', '/images/旋风2.webp',
   '/images/近邻.webp', '/images/近邻1.webp',
-  '/images/地雷.webp', '/images/地雷1.webp'
+  '/images/地雷.webp', '/images/地雷1.webp',
+  '/images/女仆.webp','/images/千金2.webp',
+  '/images/千金3.webp','/images/地雷2.webp'
 ];
 
 export default function App() {

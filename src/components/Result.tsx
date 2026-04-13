@@ -125,7 +125,7 @@ export default function Result({ scores, onRestart }: ResultProps) {
           '/images/旋风.webp',
           '/images/旋风2.webp'
         ],
-        taobaoUrl: 'https://s.tb.cn/c.0DFCI5',
+        taobaoUrl: 'https://s.tb.cn/c.0xOLh4',
         desc: '绝对的支配者，让你欲罢不能',
         quote: '“原来你喜欢这种刺激...（踩）刚好，我为你准备了专属的‘惩罚工具’，就在下面，还不快谢恩？”'
       },
